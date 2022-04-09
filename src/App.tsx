@@ -5,15 +5,11 @@ import Quiz from './quiz';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter >
         <Routes>
-          <Route path="/quiz">
-            <Quiz />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </BrowserRouter >
     </div>
