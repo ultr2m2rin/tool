@@ -7,6 +7,10 @@ import {
   QuestionTwoTitle,
   QuestionTwoOptionOne,
   QuestionTwoOptionTwo,
+  QuestionThreeOptionOne,
+  QuestionThreeOptionThree,
+  QuestionThreeOptionTwo,
+  QuestionThreeTitle,
 } from "../common/question-list";
 
 import Question from "../common/components/question";
@@ -25,11 +29,20 @@ export default function Setup() {
       />
 
       {questionOneValue === "yes" && (
-        <Question
-          title={QuestionTwoTitle}
-          optionOne={<QuestionTwoOptionOne />}
-          optionTwo={<QuestionTwoOptionTwo />}
-        />
+        <>
+          <Question
+            title={QuestionTwoTitle}
+            optionOne={<QuestionTwoOptionOne />}
+            optionTwo={<QuestionTwoOptionTwo />}
+          />
+          <Question
+            title={QuestionThreeTitle}
+            optionOne={<QuestionThreeOptionOne />}
+            optionTwo={<QuestionThreeOptionTwo />}
+            optionThree={<QuestionThreeOptionThree />}
+            optionThreeText="Prefer not to answer"
+          />
+        </>
       )}
     </div>
   );

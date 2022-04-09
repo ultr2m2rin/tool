@@ -5,11 +5,19 @@ interface QuestionProps {
   optionOne: ReactNode;
   optionTwo: ReactNode;
   optionThree?: ReactNode;
+  optionThreeText?: string;
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function Question(props: QuestionProps) {
-  const { title, optionOne, optionTwo, onChange } = props;
+  const {
+    title,
+    optionOne,
+    optionTwo,
+    optionThree,
+    optionThreeText,
+    onChange,
+  } = props;
 
   const [answerValue, setAnswerValue] = useState<undefined | string>(undefined);
 
@@ -30,6 +38,17 @@ export default function Question(props: QuestionProps) {
       <label>
         <input type="radio" value="no" name="answer" onChange={answer} /> No
       </label>
+      {optionThree !== undefined && (
+        <label>
+          <input
+            type="radio"
+            value="indeterminate"
+            name="answer"
+            onChange={answer}
+          />
+          {optionThreeText}
+        </label>
+      )}
       {answerValue === "yes" && optionOne}
       {answerValue === "no" && optionTwo}
     </div>
