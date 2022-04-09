@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Quiz() {
+export default function Setup() {
   return (
     <>
-      <div>quiz</div>
+      <div>setup</div>
     </>
   )
 }

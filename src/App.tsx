@@ -1,7 +1,11 @@
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 import Home from './home/index'
-import Quiz from './quiz';
+import Setup from './setup';
+
+export enum RouteNames {
+  setup = 'setup'
+}
 
 function App() {
   return (
@@ -9,7 +13,7 @@ function App() {
       <BrowserRouter >
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/quiz" element={<Quiz />} />
+          <Route path={`/${RouteNames.setup}`} element={<Setup />} />
         </Routes>
       </BrowserRouter >
     </div>
