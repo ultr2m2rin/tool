@@ -5,10 +5,11 @@ interface QuestionProps {
   optionOne: ReactNode;
   optionTwo: ReactNode;
   optionThree?: ReactNode;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function Question(props: QuestionProps) {
-  const { title, optionOne, optionTwo } = props;
+  const { title, optionOne, optionTwo, onChange } = props;
 
   const [answerValue, setAnswerValue] = useState<undefined | string>(undefined);
 
@@ -16,6 +17,7 @@ export default function Question(props: QuestionProps) {
     const value = event.target.value;
 
     setAnswerValue(value);
+    onChange!(event);
   };
 
   return (

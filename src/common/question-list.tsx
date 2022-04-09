@@ -62,3 +62,31 @@ export const QuestionOneOptionTwo = () => {
     </>
   );
 };
+
+export const QuestionTwoTitle =
+  "Will you use blank or null passwords for your device?";
+
+export const QuestionTwoOptionOne = () => {
+  return (
+    <>
+      <br />
+      This choice can compromise your security in the future. Blank or null
+      passwords pose a big security threat to your devices and personal data. In
+      the case of blank or null passwords, an attacker does not need to spend
+      any time at all to compromise your device's security. By having blank or
+      null passwords, users are leaving the door open for an attacker to come
+      in, which is not desirable. You should never have blank or null passwords.
+      Your password should be complex enough to protect you from attackers.
+    </>
+  );
+};
+
+export const QuestionTwoOptionTwo = () => {
+  return (
+    <>
+      <br />
+      Good! Blank or null passwords pose a big security threat to your devices
+      and personal data. You should never have blank or null passwords.
+    </>
+  );
+};
