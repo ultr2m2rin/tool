@@ -12,9 +12,8 @@ import {
 import Question from "../common/components/question";
 
 export default function Setup() {
-  const [questionOneValue, setQuestionOneValue] = useState<undefined | string>(
-    undefined
-  );
+  // TODO: investigate form frameworks if there's a better way to manage conditional rendering of questions
+  const [questionOneValue, setQuestionOneValue] = useState<string>("");
 
   return (
     <div>

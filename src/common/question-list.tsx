@@ -1,3 +1,5 @@
+// TODO: move this to some sort of backend
+
 export const QuestionOneTitle =
   "If there is a default password provided for using your device and you are allowed to change it, will you change it?";
 

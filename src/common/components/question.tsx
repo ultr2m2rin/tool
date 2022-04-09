@@ -17,7 +17,8 @@ export default function Question(props: QuestionProps) {
     const value = event.target.value;
 
     setAnswerValue(value);
-    onChange!(event);
+
+    if (onChange !== undefined) onChange(event);
   };
 
   return (
