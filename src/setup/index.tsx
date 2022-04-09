@@ -31,7 +31,7 @@ import {
   QuestionNineOptionOne,
   QuestionNineOptionTwo,
   QuestionNineTitle,
-} from "../common/question-list";
+} from "../common/setup-question-list";
 
 import Question from "../common/components/question";
 
