@@ -2,7 +2,8 @@ import { ChangeEvent, ReactNode, useState } from "react";
 
 interface QuestionProps {
   title: ReactNode;
-  optionOne: ReactNode;
+  name: string;
+  optionOne?: ReactNode;
   optionTwo: ReactNode;
   optionThree?: ReactNode;
   optionThreeText?: string;
@@ -12,6 +13,7 @@ interface QuestionProps {
 export default function Question(props: QuestionProps) {
   const {
     title,
+    name,
     optionOne,
     optionTwo,
     optionThree,
@@ -33,17 +35,17 @@ export default function Question(props: QuestionProps) {
     <div>
       <h3>{title}</h3>
       <label>
-        <input type="radio" value="yes" name="answer" onChange={answer} /> Yes
+        <input type="radio" value="yes" name={name} onChange={answer} /> Yes
       </label>
       <label>
-        <input type="radio" value="no" name="answer" onChange={answer} /> No
+        <input type="radio" value="no" name={name} onChange={answer} /> No
       </label>
       {optionThree !== undefined && (
         <label>
           <input
             type="radio"
             value="indeterminate"
-            name="answer"
+            name={name}
             onChange={answer}
           />
           {optionThreeText}
@@ -51,6 +53,7 @@ export default function Question(props: QuestionProps) {
       )}
       {answerValue === "yes" && optionOne}
       {answerValue === "no" && optionTwo}
+      {answerValue === "indeterminate" && optionThree}
     </div>
   );
 }

@@ -378,7 +378,7 @@ export const QuestionEightOptionThree = () => {
 };
 
 export const QuestionNineTitle =
-  "Were you asked to consider two-factor authentication for controlling your device?";
+  "Will you enable two-factor authentication for your device?";
 
 export const QuestionNineOptionOne = () => {
   return (
