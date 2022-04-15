@@ -1,9 +1,11 @@
 // TODO: move this to some sort of backend
 
-export const QuestionOneTitle =
+import { ReactNode } from "react";
+
+const QuestionOneTitle =
   "If there is a default password provided for using your device and you are allowed to change it, will you change it?";
 
-export const QuestionOneOptionOne = () => {
+const QuestionOneOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -27,7 +29,7 @@ export const QuestionOneOptionOne = () => {
   );
 };
 
-export const QuestionOneOptionTwo = () => {
+const QuestionOneOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -65,10 +67,10 @@ export const QuestionOneOptionTwo = () => {
   );
 };
 
-export const QuestionTwoTitle =
+const QuestionTwoTitle =
   "Will you use blank or null passwords for your device?";
 
-export const QuestionTwoOptionOne = () => {
+const QuestionTwoOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -83,7 +85,7 @@ export const QuestionTwoOptionOne = () => {
   );
 };
 
-export const QuestionTwoOptionTwo = () => {
+const QuestionTwoOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -93,10 +95,10 @@ export const QuestionTwoOptionTwo = () => {
   );
 };
 
-export const QuestionThreeTitle =
+const QuestionThreeTitle =
   "Will your password be the same as your account name?";
 
-export const QuestionThreeOptionOne = () => {
+const QuestionThreeOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -110,7 +112,7 @@ export const QuestionThreeOptionOne = () => {
   );
 };
 
-export const QuestionThreeOptionTwo = () => {
+const QuestionThreeOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -121,7 +123,7 @@ export const QuestionThreeOptionTwo = () => {
   );
 };
 
-export const QuestionThreeOptionThree = () => {
+const QuestionThreeOptionThree: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -134,10 +136,10 @@ export const QuestionThreeOptionThree = () => {
   );
 };
 
-export const QuestionFourTitle =
+const QuestionFourTitle =
   "Will your password for your device be at least 12 characters long?";
 
-export const QuestionFourOptionOne = () => {
+const QuestionFourOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -151,7 +153,7 @@ export const QuestionFourOptionOne = () => {
   );
 };
 
-export const QuestionFourOptionTwo = () => {
+const QuestionFourOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -167,10 +169,10 @@ export const QuestionFourOptionTwo = () => {
   );
 };
 
-export const QuestionFiveTitle =
+const QuestionFiveTitle =
   "Will you follow any security recommendations when creating your new password?";
 
-export const QuestionFiveOptionOne = () => {
+const QuestionFiveOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -191,7 +193,7 @@ export const QuestionFiveOptionOne = () => {
   );
 };
 
-export const QuestionFiveOptionTwo = () => {
+const QuestionFiveOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -232,10 +234,10 @@ export const QuestionFiveOptionTwo = () => {
   );
 };
 
-export const QuestionSixTitle =
+const QuestionSixTitle =
   "Will you use any password managers to store the password?";
 
-export const QuestionSixOptionOne = () => {
+const QuestionSixOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -247,7 +249,7 @@ export const QuestionSixOptionOne = () => {
   );
 };
 
-export const QuestionSixOptionTwo = () => {
+const QuestionSixOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -262,7 +264,7 @@ export const QuestionSixOptionTwo = () => {
   );
 };
 
-export const QuestionSixOptionThree = () => {
+const QuestionSixOptionThree: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -276,10 +278,10 @@ export const QuestionSixOptionThree = () => {
   );
 };
 
-export const QuestionSevenTitle =
+const QuestionSevenTitle =
   "Will anyone else who you know be familiar with your password or have access to it?";
 
-export const QuestionSevenOptionOne = () => {
+const QuestionSevenOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -292,7 +294,7 @@ export const QuestionSevenOptionOne = () => {
   );
 };
 
-export const QuestionSevenOptionTwo = () => {
+const QuestionSevenOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -305,7 +307,7 @@ export const QuestionSevenOptionTwo = () => {
   );
 };
 
-export const QuestionSevenOptionThree = () => {
+const QuestionSevenOptionThree: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -318,10 +320,19 @@ export const QuestionSevenOptionThree = () => {
   );
 };
 
-export const QuestionEightTitle =
+const QuestionEightTitle =
   "Were you asked to consider two-factor authentication for controlling your device?";
 
-export const QuestionEightOptionTwo = () => {
+const QuestionEightOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Proceed to the next question.
+    </>
+  );
+};
+
+const QuestionEightOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -349,7 +360,7 @@ export const QuestionEightOptionTwo = () => {
   );
 };
 
-export const QuestionEightOptionThree = () => {
+const QuestionEightOptionThree: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -377,10 +388,10 @@ export const QuestionEightOptionThree = () => {
   );
 };
 
-export const QuestionNineTitle =
+const QuestionNineTitle =
   "Will you enable two-factor authentication for your device?";
 
-export const QuestionNineOptionOne = () => {
+const QuestionNineOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -407,7 +418,7 @@ export const QuestionNineOptionOne = () => {
   );
 };
 
-export const QuestionNineOptionTwo = () => {
+const QuestionNineOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
@@ -435,3 +446,68 @@ export const QuestionNineOptionTwo = () => {
     </>
   );
 };
+
+export interface Questions {
+  question: string;
+  recommendations: (() => ReactNode)[];
+  recommendationThreeButtonContent?: string;
+}
+
+export const questions: Questions[] = [
+  {
+    question: QuestionOneTitle,
+    recommendations: [QuestionOneOptionOne, QuestionOneOptionTwo],
+  },
+  {
+    question: QuestionTwoTitle,
+    recommendations: [QuestionTwoOptionOne, QuestionTwoOptionTwo],
+  },
+  {
+    question: QuestionThreeTitle,
+    recommendations: [
+      QuestionThreeOptionOne,
+      QuestionThreeOptionTwo,
+      QuestionThreeOptionThree,
+    ],
+    recommendationThreeButtonContent: "Prefer not to answer",
+  },
+  {
+    question: QuestionFourTitle,
+    recommendations: [QuestionFourOptionOne, QuestionFourOptionTwo],
+  },
+  {
+    question: QuestionFiveTitle,
+    recommendations: [QuestionFiveOptionOne, QuestionFiveOptionTwo],
+  },
+  {
+    question: QuestionSixTitle,
+    recommendations: [
+      QuestionSixOptionOne,
+      QuestionSixOptionTwo,
+      QuestionSixOptionThree,
+    ],
+    recommendationThreeButtonContent: "I am not familiar with these",
+  },
+  {
+    question: QuestionSevenTitle,
+    recommendations: [
+      QuestionSevenOptionOne,
+      QuestionSevenOptionTwo,
+      QuestionSevenOptionThree,
+    ],
+    recommendationThreeButtonContent: "Prefer not to answer",
+  },
+  {
+    question: QuestionEightTitle,
+    recommendations: [
+      QuestionEightOptionOne,
+      QuestionEightOptionTwo,
+      QuestionEightOptionThree,
+    ],
+    recommendationThreeButtonContent: "Not applicable",
+  },
+  {
+    question: QuestionNineTitle,
+    recommendations: [QuestionNineOptionOne, QuestionNineOptionTwo],
+  },
+];
