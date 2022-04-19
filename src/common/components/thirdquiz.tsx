@@ -11,7 +11,7 @@ interface QuizProps {
 export default function Quiz(props: QuizProps) {
   const { questions } = props;
   const [questionNumber, setQuestionNumber] = useState(1);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(19);
   const [nextQuestionIndex, setNextQuestionIndex] = useState(0);
   const [nextQuestionChange, setNextQuestionChange] = useState(false);
 
@@ -26,7 +26,7 @@ export default function Quiz(props: QuizProps) {
   const navigate = useNavigate();
 
   const nextQuestion = () => {
-    if (nextQuestionIndex === 9) navigate("/summary");
+    if (nextQuestionIndex === 28) navigate("/summarythree");
 
     setNextQuestionChange(!nextQuestionChange);
     setCurrentQuestionIndex(nextQuestionIndex);
@@ -38,22 +38,19 @@ export default function Quiz(props: QuizProps) {
   const changeQuestion = (event: ChangeEvent<HTMLInputElement>) => {
     const answer = event.target.value;
 
-    if (currentQuestionIndex === 0 && answer === "yes") setNextQuestionIndex(1);
-    else if (currentQuestionIndex === 0 && answer === "no")
-      setNextQuestionIndex(5);
-    else if (currentQuestionIndex === 7 && answer === "yes")
-      setNextQuestionIndex(8);
+    if (currentQuestionIndex === 22 && answer === "yes")
+      setNextQuestionIndex(23);
     else if (
-      (currentQuestionIndex === 7 && answer === "no") ||
-      (currentQuestionIndex === 7 && answer === "indeterminate")
+      (currentQuestionIndex === 22 && answer === "no") ||
+      (currentQuestionIndex === 22 && answer === "indeterminate")
     )
-      setNextQuestionIndex(9);
+      setNextQuestionIndex(24);
     else setNextQuestionIndex(currentQuestionIndex + 1);
   };
 
   return (
     <div>
-      <h2>Passwords and Two-Factor Authentication</h2>
+      <h2>General Security</h2>
       {questions !== undefined && (
         <Question
           title={`${questionNumber}. ${title}`}

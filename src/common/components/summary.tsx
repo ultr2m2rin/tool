@@ -14,7 +14,7 @@ export default function Summary() {
 export function SecondQuiz() {
   const navigate = useNavigate();
   return (
-    <button onClick={() => navigate(`/${RouteNames.nextsec}`)}>
+    <button onClick={() => navigate(`/${RouteNames.sectwo}`)}>
       Next Section
     </button>
   );

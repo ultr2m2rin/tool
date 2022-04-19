@@ -10,7 +10,7 @@ interface QuizProps {
 
 export default function Quiz(props: QuizProps) {
   const { questions } = props;
-  const [questionNumber, setQuestionNumber] = useState(10);
+  const [questionNumber, setQuestionNumber] = useState(1);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(9);
   const [nextQuestionIndex, setNextQuestionIndex] = useState(0);
   const [nextQuestionChange, setNextQuestionChange] = useState(false);
@@ -75,6 +75,7 @@ export default function Quiz(props: QuizProps) {
 
   return (
     <div>
+      <h2>Notifications and Personal Data</h2>
       {questions !== undefined && (
         <Question
           title={`${questionNumber}. ${title}`}

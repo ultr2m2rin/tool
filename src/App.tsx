@@ -1,17 +1,21 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Summary from "./common/components/summary";
 import SummaryTwo from "./common/components/summarytwo";
+import SummaryThree from "./common/components/summarythree";
 import { questions } from "./common/setup-question-list";
 
 import Home from "./home/index";
 import Setup from "./setup";
 import SecondQuiz from "./common/components/secondquiz";
+import ThirdQuiz from "./common/components/thirdquiz";
 
 export enum RouteNames {
   setup = "setup",
   summary = "summary",
   summarytwo = "summarytwo",
-  nextsec = "secondquiz",
+  summarythree = "summarythree",
+  sectwo = "secondquiz",
+  secthree = "thirdquiz",
 }
 
 function App() {
@@ -24,8 +28,16 @@ function App() {
           <Route path={`/${RouteNames.summary}`} element={<Summary />} />
           <Route path={`/${RouteNames.summarytwo}`} element={<SummaryTwo />} />
           <Route
-            path={`/${RouteNames.nextsec}`}
+            path={`/${RouteNames.summarythree}`}
+            element={<SummaryThree />}
+          />
+          <Route
+            path={`/${RouteNames.sectwo}`}
             element={<SecondQuiz questions={questions} />}
+          />
+          <Route
+            path={`/${RouteNames.secthree}`}
+            element={<ThirdQuiz questions={questions} />}
           />
         </Routes>
       </BrowserRouter>
