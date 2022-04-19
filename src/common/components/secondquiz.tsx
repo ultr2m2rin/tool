@@ -10,8 +10,8 @@ interface QuizProps {
 
 export default function Quiz(props: QuizProps) {
   const { questions } = props;
-  const [questionNumber, setQuestionNumber] = useState(1);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [questionNumber, setQuestionNumber] = useState(10);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(9);
   const [nextQuestionIndex, setNextQuestionIndex] = useState(0);
   const [nextQuestionChange, setNextQuestionChange] = useState(false);
 
@@ -26,7 +26,7 @@ export default function Quiz(props: QuizProps) {
   const navigate = useNavigate();
 
   const nextQuestion = () => {
-    if (nextQuestionIndex === 9) navigate("/summary");
+    if (nextQuestionIndex === 19) navigate("/summarytwo");
 
     setNextQuestionChange(!nextQuestionChange);
     setCurrentQuestionIndex(nextQuestionIndex);
@@ -38,16 +38,38 @@ export default function Quiz(props: QuizProps) {
   const changeQuestion = (event: ChangeEvent<HTMLInputElement>) => {
     const answer = event.target.value;
 
-    if (currentQuestionIndex === 0 && answer === "yes") setNextQuestionIndex(1);
-    else if (currentQuestionIndex === 0 && answer === "no")
-      setNextQuestionIndex(5);
-    else if (currentQuestionIndex === 7 && answer === "yes")
-      setNextQuestionIndex(8);
+    if (currentQuestionIndex === 9 && answer === "yes")
+      setNextQuestionIndex(10);
     else if (
-      (currentQuestionIndex === 7 && answer === "no") ||
-      (currentQuestionIndex === 7 && answer === "indeterminate")
+      (currentQuestionIndex === 9 && answer === "no") ||
+      (currentQuestionIndex === 9 && answer === "indeterminate")
     )
-      setNextQuestionIndex(9);
+      setNextQuestionIndex(11);
+    else if (currentQuestionIndex === 11 && answer === "yes")
+      setNextQuestionIndex(12);
+    else if (
+      (currentQuestionIndex === 11 && answer === "no") ||
+      (currentQuestionIndex === 11 && answer === "indeterminate")
+    )
+      setNextQuestionIndex(15);
+    else if (currentQuestionIndex === 13 && answer === "yes")
+      setNextQuestionIndex(14);
+    else if (
+      (currentQuestionIndex === 13 && answer === "no") ||
+      (currentQuestionIndex === 13 && answer === "indeterminate")
+    )
+      setNextQuestionIndex(15);
+    else if (currentQuestionIndex === 16 && answer === "yes")
+      setNextQuestionIndex(17);
+    else if (
+      (currentQuestionIndex === 16 && answer === "no") ||
+      (currentQuestionIndex === 16 && answer === "indeterminate")
+    )
+      setNextQuestionIndex(19);
+    else if (currentQuestionIndex === 17 && answer === "yes")
+      setNextQuestionIndex(18);
+    else if (currentQuestionIndex === 17 && answer === "no")
+      setNextQuestionIndex(19);
     else setNextQuestionIndex(currentQuestionIndex + 1);
   };
 

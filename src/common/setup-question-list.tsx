@@ -447,6 +447,806 @@ const QuestionNineOptionTwo: () => ReactNode = () => {
   );
 };
 
+// Section 2 start
+
+const QuestionTenTitle =
+  "Is your device able to send you any notifications related to its performance?";
+
+const QuestionTenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Proceed to the next question.
+    </>
+  );
+};
+
+const QuestionTenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Generally, notifications are used to notify users about any changes,
+      updates, or anything that requires users’ attention regarding users’
+      devices. Some notifications are related to security and sometimes can
+      prevents users from security breaches. For example,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://support.google.com/accounts/answer/2590353?hl=en"
+        >
+          Google
+        </a>
+      }
+      sends security alerts when they detect if someone signs in an account on a
+      new device. If an attacker tries to obtain access to your account, it is
+      important that you can receive notifications about it and respond
+      promptly. Therefore, it is important to have official notifications always
+      enabled.
+    </>
+  );
+};
+
+const QuestionTenOptionThree: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Generally, notifications are used to notify users about any changes,
+      updates, or anything that requires users’ attention regarding users’
+      devices. Some notifications are related to security and sometimes can
+      prevents users from security breaches. For example,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://support.google.com/accounts/answer/2590353?hl=en"
+        >
+          Google
+        </a>
+      }
+      sends security alerts when they detect if someone signs in an account on a
+      new device. If an attacker tries to obtain access to your account, it is
+      important that you can receive notifications about it and respond
+      promptly. Therefore, it is important to have official notifications always
+      enabled.
+    </>
+  );
+};
+
+const QuestionElevenTitle =
+  "Do you consider disabling notifications for your device?";
+
+const QuestionElevenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      You may want to reconsider this. Generally, notifications are used to
+      notify users about any changes, updates, or anything that requires users’
+      attention regarding users’ devices. Some notifications are related to
+      security and sometimes can prevents users from security breaches. For
+      example,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://support.google.com/accounts/answer/2590353?hl=en"
+        >
+          Google
+        </a>
+      }
+      sends security alerts when they detect if someone signs in an account on a
+      new device. If an attacker tries to obtain access to your account, it is
+      important that you can receive notifications about it and respond
+      promptly. Therefore, it is important to have official notifications always
+      enabled.
+    </>
+  );
+};
+
+const QuestionElevenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! Generally, notifications are used to notify users about any changes,
+      updates, or anything that requires users’ attention regarding users’
+      devices. Some notifications are related to security and sometimes can
+      prevents users from security breaches. For example,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://support.google.com/accounts/answer/2590353?hl=en"
+        >
+          Google
+        </a>
+      }
+      sends security alerts when they detect if someone signs in an account on a
+      new device. If an attacker tries to obtain access to your account, it is
+      important that you can receive notifications about it and respond
+      promptly. Therefore, it is important to have official notifications always
+      enabled.
+    </>
+  );
+};
+
+const QuestionTwelveTitle =
+  "Does your device collect, use, and store your personal information?";
+
+const QuestionTwelveOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Proceed to the next question.
+    </>
+  );
+};
+
+const QuestionTwelveOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices may need to collect user’s personal information to operate.
+      For example,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nest.com/ca/legal/privacy-statement-for-nest-products-and-services/"
+        >
+          Nest Learning Thermostat
+        </a>
+      }
+      collects setup information provided by users as well as technical
+      information from the device, environmental data from thermostat’s sensors,
+      and other types of data.{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nest.com/ca/legal/privacy-statement-for-nest-products-and-services/"
+        >
+          Nest Cam
+        </a>
+      }
+      collects video and audio signals and data along with other types of data.
+      It is important to know if your device collects any type of your personal
+      information to be able to control the settings (e.g., you can enable audio
+      recordings but disable video recordings if you wish) or at least be aware
+      of the use of your personal data. We recommend referring to official data
+      privacy statements published by device’s manufacturers to learn about
+      types of data collected by your devices.
+    </>
+  );
+};
+
+const QuestionTwelveOptionThree: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices may need to collect user’s personal information to operate.
+      For example,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nest.com/ca/legal/privacy-statement-for-nest-products-and-services/"
+        >
+          Nest Learning Thermostat
+        </a>
+      }
+      collects setup information provided by users as well as technical
+      information from the device, environmental data from thermostat’s sensors,
+      and other types of data.{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nest.com/ca/legal/privacy-statement-for-nest-products-and-services/"
+        >
+          Nest Cam
+        </a>
+      }
+      collects video and audio signals and data along with other types of data.
+      It is important to know if your device collects any type of your personal
+      information to be able to control the settings (e.g., you can enable audio
+      recordings but disable video recordings if you wish) or at least be aware
+      of the use of your personal data. When you are not sure if your device
+      collects any personal data, we recommend referring to official data
+      privacy statements published by device’s manufacturers.
+    </>
+  );
+};
+
+const QuestionThirteenTitle =
+  "Do you know what kind of information your device collects, uses, and stores?";
+
+const QuestionThirteenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! It is important to know if your device collects any type of your
+      personal information to be able to control the settings (e.g., you can
+      enable audio recordings but disable video recordings if you wish) or at
+      least be aware of the use of your personal data. We recommend referring to
+      official data privacy statements published by device’s manufacturers to
+      learn about types of data collected by your devices.
+    </>
+  );
+};
+
+const QuestionThirteenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      This choice can compromise your security in the future. Some devices may
+      need to collect user’s personal information to operate. For example,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nest.com/ca/legal/privacy-statement-for-nest-products-and-services/"
+        >
+          Nest Learning Thermostat
+        </a>
+      }
+      collects setup information provided by users as well as technical
+      information from the device, environmental data from thermostat’s sensors,
+      and other types of data.{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nest.com/ca/legal/privacy-statement-for-nest-products-and-services/"
+        >
+          Nest Cam
+        </a>
+      }
+      collects video and audio signals and data along with other types of data.
+      It is important to know what kind of data your device collects to be able
+      to control the settings (e.g., you can enable audio recordings but disable
+      video recordings if you wish) or at least be aware of the use of your
+      personal data. We recommend referring to official data privacy statements
+      published by device’s manufacturers to learn about types of data collected
+      by your devices.
+    </>
+  );
+};
+
+const QuestionFourteenTitle =
+  "Is your device capable of recording audio/visual or any other type of data?";
+
+const QuestionFourteenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Proceed to the next question.
+    </>
+  );
+};
+
+const QuestionFourteenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices may need to record user’s audio and video data to operate.
+      For example,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nest.com/ca/legal/privacy-statement-for-nest-products-and-services/"
+        >
+          Nest Cam
+        </a>
+      }
+      collects video and audio signals and data along with other types of data.
+      It is important to know what kind of data your device collects to be able
+      to control the settings (e.g., you can enable audio recordings but disable
+      video recordings if you wish) or at least be aware of the use of your
+      personal data.
+    </>
+  );
+};
+
+const QuestionFourteenOptionThree: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices may need to record user’s audio and video data to operate.
+      For example,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nest.com/ca/legal/privacy-statement-for-nest-products-and-services/"
+        >
+          Nest Cam
+        </a>
+      }
+      collects video and audio signals and data along with other types of data.
+      It is important to know what kind of data your device collects to be able
+      to control the settings (e.g., you can enable audio recordings but disable
+      video recordings if you wish) or at least be aware of the use of your
+      personal data. We recommend referring to official data privacy statements
+      published by device’s manufacturers to learn about types of data collected
+      by your devices.
+    </>
+  );
+};
+
+const QuestionFifteenTitle =
+  "Will you allow your device to record audio/visual or any other type of data?";
+
+const QuestionFifteenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      For some devices, it is necessary to be able to record audio and/or video
+      data to operate. You should always know if you allow your device to record
+      your audio and/or video data. You should also know how to disable these
+      features if needed and possible. We recommend referring to official
+      guidelines published by device’s manufacturers to learn about the features
+      of your devices and how you can control them.
+    </>
+  );
+};
+
+const QuestionFifteenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      For some devices, it is necessary to be able to record audio and/or video
+      data to operate. You should always know if you allow your device to record
+      your audio and/or video data. You should also know how to disable these
+      features if needed and possible. We recommend referring to official
+      guidelines published by device’s manufacturers to learn about the features
+      of your devices and how you can control them.
+    </>
+  );
+};
+
+const QuestionSixteenTitle =
+  "Can you access information about your device’s data protection?";
+
+const QuestionSixteenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! It is important to know how the data from your device is being
+      protected since the awareness may allow you to choose what kind of data
+      you are willing to share. We recommend referring to official guidelines
+      published by device’s manufacturers to learn about their data protection
+      policies.
+    </>
+  );
+};
+
+const QuestionSixteenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      It is important to know how the data from your device is being protected
+      since the awareness may allow you to choose what kind of data you are
+      willing to share. We strongly recommend referring to official guidelines
+      published by device’s manufacturers to learn about their data protection
+      policies.
+    </>
+  );
+};
+
+const QuestionSeventeenTitle =
+  "Can your device share any of your personal data with third parties?";
+
+const QuestionSeventeenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Proceed to the next question.
+    </>
+  );
+};
+
+const QuestionSeventeenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices need to share the collected data with third parties for
+      performance reviews, data analysis, feature functioning, and many more
+      reasons. It is important to know what kind of data you agree to share and
+      with whom if you are asked to allow the access of your data to companies
+      other than the manufacturer. We recommend reading privacy and security
+      statements provided regarding third-party data sharing.
+    </>
+  );
+};
+
+const QuestionSeventeenOptionThree: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices need to share the collected data with third parties for
+      performance reviews, data analysis, feature functioning, and many more
+      reasons. It is important to know what kind of data you agree to share and
+      with whom if you are asked to allow the access of your data to companies
+      other than the manufacturer. We recommend reading privacy and security
+      statements provided regarding third-party data sharing.
+    </>
+  );
+};
+
+const QuestionEighteenTitle =
+  "Will you allow your device to share your personal data with third parties?";
+
+const QuestionEighteenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices need to share the collected data with third parties for
+      performance reviews, data analysis, feature functioning, and many more
+      reasons. It is important to know what kind of data you agree to share and
+      with whom if you are asked to allow the access of your data to companies
+      other than the manufacturer. We recommend reading privacy and security
+      statements provided regarding third-party data sharing.
+    </>
+  );
+};
+
+const QuestionEighteenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices need to share the collected data with third parties for
+      performance reviews, data analysis, feature functioning, and many more
+      reasons. We recommend reading privacy and security statements provided
+      regarding third-party data sharing.
+    </>
+  );
+};
+
+const QuestionNineteenTitle =
+  "Do you know what kind of personal data you may share and with whom?";
+
+const QuestionNineteenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! Remember, it is important to know what kind of data you agree to
+      share and with whom if you are asked to allow the access of your data to
+      companies other than the manufacturer.
+    </>
+  );
+};
+
+const QuestionNineteenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      You may want to learn about it. Remember, it is important to know what
+      kind of data you agree to share and with whom if you are asked to allow
+      the access of your data to companies other than the manufacturer.
+    </>
+  );
+};
+
+// Section 3 start
+
+const QuestionTwentyTitle =
+  "Can you access information about your device’s capabilities?";
+
+const QuestionTwentyOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! It is important to know your device’s features and details about
+      them. When you understand what your device is capable of, you have more
+      chances to protect it efficiently.
+    </>
+  );
+};
+
+const QuestionTwentyOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      We recommend searching for this information. It is important to know your
+      device’s features and details about them. When you understand what your
+      device is capable of, you have more chances to protect it efficiently.
+    </>
+  );
+};
+
+const QuestionTwentyoneTitle =
+  "Do you know the duration and end-of-life security and support of your devices?";
+
+const QuestionTwentyoneOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! Remember, with end-of-life technology your device will stop
+      receiving automatic security updates and vulnerabilities will not be fixed
+      anymore. Therefore, it is important to be aware of the date when this
+      happens.
+    </>
+  );
+};
+
+const QuestionTwentyoneOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      You may want to search for this information. Remember, with end-of-life
+      technology your device will stop receiving automatic security updates and
+      vulnerabilities will not be fixed anymore. Your device can become an easy
+      target for attackers. Therefore, it is important to be aware of the date
+      when this happens.
+    </>
+  );
+};
+
+const QuestionTwentytwoTitle =
+  "Do you need to connect your device to your Wi-Fi network at home?";
+
+const QuestionTwentytwoOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Remember to connect your device only to a network you can trust (e.g.,
+      your home network). Follow official guidelines on how to connect your
+      device to a Wi-Fi network published by device’s manufacturer.
+    </>
+  );
+};
+
+const QuestionTwentytwoOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices need to be connected to a Wi-Fi network. Remember, if your
+      device needs to use a Wi-Fi connection, connect it only to a network you
+      can trust.
+    </>
+  );
+};
+
+const QuestionTwentythreeTitle = "Does your device support guest accounts?";
+
+const QuestionTwentythreeOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Proceed to the next question.
+    </>
+  );
+};
+
+const QuestionTwentythreeOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices may offer features to add guest accounts. For example, some
+      smart door locks can be controlled by main permanent owners as well as
+      temporary guests. It is important to only let trusted people use your
+      smart home devices and revoke access as soon as it is not required.
+    </>
+  );
+};
+
+const QuestionTwentythreeOptionThree: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Some devices may offer features to add guest accounts. For example, some
+      smart door locks can be controlled by main permanent owners as well as
+      temporary guests. It is important to only let trusted people use your
+      smart home devices and revoke access as soon as it is not required. We
+      recommend reading official guidelines provided by your device’s
+      manufacturer to understand if you can add guest accounts to your device.
+    </>
+  );
+};
+
+const QuestionTwentyfourTitle =
+  "Will you consider adding any quest account to your device?";
+
+const QuestionTwentyfourOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Remember to only let trusted people use your smart home devices and revoke
+      access as soon as it is not required.
+    </>
+  );
+};
+
+const QuestionTwentyfourOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      If you ever change your mind, remember to only let trusted people use your
+      smart home devices and revoke access as soon as it is not required.
+    </>
+  );
+};
+
+const QuestionTwentyfiveTitle =
+  "Is your device physically protected (e.g., it is not visible from the outside of your home)?";
+
+const QuestionTwentyfiveOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! Remember, some devices can be abused by attackers if they are
+      visible in your home (e.g.,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.wired.com/story/lasers-hack-amazon-echo-google-home/"
+        >
+          this
+        </a>
+      }
+      article discusses how Google Home or Amazon Alexa can be affected by
+      lasers) or can be easily physically accessible (e.g., smart locks or smart
+      thermostats).
+    </>
+  );
+};
+
+const QuestionTwentyfiveOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      We recommend physically protecting your devices if needed. Remember, some
+      devices can be abused by attackers if they are visible in your home (e.g.,{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.wired.com/story/lasers-hack-amazon-echo-google-home/"
+        >
+          this
+        </a>
+      }
+      article discusses how Google Home or Amazon Alexa can be affected by
+      lasers) or can be easily physically accessible (e.g., smart locks or smart
+      thermostats).
+    </>
+  );
+};
+
+const QuestionTwentysixTitle =
+  "Do you know your device’s model and serial number?";
+
+const QuestionTwentysixOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! Make sure you can always access this information if needed. When you
+      know your device’s model and serial number you can find relevant
+      instructions for it much faster and easier.
+    </>
+  );
+};
+
+const QuestionTwentysixOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      We recommend searching for this information. You can try looking for it in
+      the packaging for your device or somewhere directly on your device. Make
+      sure you can always access this information if needed. When you know your
+      device’s model and serial number you can find relevant instructions for it
+      much faster and easier.
+    </>
+  );
+};
+
+const QuestionTwentysevenTitle =
+  "Do you have information on how to maintain your device?";
+
+const QuestionTwentysevenOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! Remember to refer to official information provided by trustworthy
+      sources like manufacturers and service providers. For example, on this
+      official{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.amazon.ca/gp/help/customer/display.html?nodeId=GPGRYRZ494GDFPZ2"
+        >
+          webpage
+        </a>
+      }
+      administered by Amazon you can find information about managing Alexa
+      Privacy Settings.
+    </>
+  );
+};
+
+const QuestionTwentysevenOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      We recommend searching for this information. Manufacturers usually publish
+      their guidelines and pieces of advice on how to use your device and
+      maintain its security. Please, refer to official information provided by
+      trustworthy sources like manufacturers and service providers. For example,
+      on this official{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.amazon.ca/gp/help/customer/display.html?nodeId=GPGRYRZ494GDFPZ2"
+        >
+          webpage
+        </a>
+      }
+      administered by Amazon you can find information about managing Alexa
+      Privacy Settings.
+    </>
+  );
+};
+
+const QuestionTwentyeightTitle =
+  "Were you provided with guidance on how to securely set up a device?";
+
+const QuestionTwentyeightOptionOne: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      Good! Please follow the official instructions provided to you.
+    </>
+  );
+};
+
+const QuestionTwentyeightOptionTwo: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      We recommend searching for this information. Usually, manufacturers and
+      service providers publish their official guidelines on the Internet.
+      Please, refer only to trusted sources to set up your device’s security.
+      This{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.wikihow.com/Find-if-a-Website-Is-Legitimate"
+        >
+          article
+        </a>
+      }
+      published by WikiHow explains how you can find if a website is legitimate.
+    </>
+  );
+};
+
+const QuestionTwentyeightOptionThree: () => ReactNode = () => {
+  return (
+    <>
+      <br />
+      We recommend searching for this information. Usually, manufacturers and
+      service providers publish their official guidelines on the Internet.
+      Please, refer only to trusted sources to set up your device’s security.
+      This{" "}
+      {
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.wikihow.com/Find-if-a-Website-Is-Legitimate"
+        >
+          article
+        </a>
+      }
+      published by WikiHow explains how you can find if a website is legitimate.
+    </>
+  );
+};
+
 export interface Questions {
   question: string;
   recommendations: (() => ReactNode)[];
@@ -509,5 +1309,116 @@ export const questions: Questions[] = [
   {
     question: QuestionNineTitle,
     recommendations: [QuestionNineOptionOne, QuestionNineOptionTwo],
+  },
+  // section 2 questions indexes 9-18
+  {
+    question: QuestionTenTitle,
+    recommendations: [
+      QuestionTenOptionOne,
+      QuestionTenOptionTwo,
+      QuestionTenOptionThree,
+    ],
+    recommendationThreeButtonContent: "I am not sure",
+  },
+  {
+    question: QuestionElevenTitle,
+    recommendations: [QuestionElevenOptionOne, QuestionElevenOptionTwo],
+  },
+  {
+    question: QuestionTwelveTitle,
+    recommendations: [
+      QuestionTwelveOptionOne,
+      QuestionTwelveOptionTwo,
+      QuestionTwelveOptionThree,
+    ],
+    recommendationThreeButtonContent: "I am not sure",
+  },
+  {
+    question: QuestionThirteenTitle,
+    recommendations: [QuestionThirteenOptionOne, QuestionThirteenOptionTwo],
+  },
+  {
+    question: QuestionFourteenTitle,
+    recommendations: [
+      QuestionFourteenOptionOne,
+      QuestionFourteenOptionTwo,
+      QuestionFourteenOptionThree,
+    ],
+    recommendationThreeButtonContent: "I am not sure",
+  },
+  {
+    question: QuestionFifteenTitle,
+    recommendations: [QuestionFifteenOptionOne, QuestionFifteenOptionTwo],
+  },
+  {
+    question: QuestionSixteenTitle,
+    recommendations: [QuestionSixteenOptionOne, QuestionSixteenOptionTwo],
+  },
+  {
+    question: QuestionSeventeenTitle,
+    recommendations: [
+      QuestionSeventeenOptionOne,
+      QuestionSeventeenOptionTwo,
+      QuestionSeventeenOptionThree,
+    ],
+    recommendationThreeButtonContent: "I am not sure",
+  },
+  {
+    question: QuestionEighteenTitle,
+    recommendations: [QuestionEighteenOptionOne, QuestionEighteenOptionTwo],
+  },
+  {
+    question: QuestionNineteenTitle,
+    recommendations: [QuestionNineteenOptionOne, QuestionNineteenOptionTwo],
+  },
+  // section 3 questions indexes 19-27
+  {
+    question: QuestionTwentyTitle,
+    recommendations: [QuestionTwentyOptionOne, QuestionTwentyOptionTwo],
+  },
+  {
+    question: QuestionTwentyoneTitle,
+    recommendations: [QuestionTwentyoneOptionOne, QuestionTwentyoneOptionTwo],
+  },
+  {
+    question: QuestionTwentytwoTitle,
+    recommendations: [QuestionTwentytwoOptionOne, QuestionTwentytwoOptionTwo],
+  },
+  {
+    question: QuestionTwentythreeTitle,
+    recommendations: [
+      QuestionTwentythreeOptionOne,
+      QuestionTwentythreeOptionTwo,
+      QuestionTwentythreeOptionThree,
+    ],
+    recommendationThreeButtonContent: "I am not sure",
+  },
+  {
+    question: QuestionTwentyfourTitle,
+    recommendations: [QuestionTwentyfourOptionOne, QuestionTwentyfourOptionTwo],
+  },
+  {
+    question: QuestionTwentyfiveTitle,
+    recommendations: [QuestionTwentyfiveOptionOne, QuestionTwentyfiveOptionTwo],
+  },
+  {
+    question: QuestionTwentysixTitle,
+    recommendations: [QuestionTwentysixOptionOne, QuestionTwentysixOptionTwo],
+  },
+  {
+    question: QuestionTwentysevenTitle,
+    recommendations: [
+      QuestionTwentysevenOptionOne,
+      QuestionTwentysevenOptionTwo,
+    ],
+  },
+  {
+    question: QuestionTwentyeightTitle,
+    recommendations: [
+      QuestionTwentyeightOptionOne,
+      QuestionTwentyeightOptionTwo,
+      QuestionTwentyeightOptionThree,
+    ],
+    recommendationThreeButtonContent: "I am not sure",
   },
 ];
