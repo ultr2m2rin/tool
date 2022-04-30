@@ -1,0 +1,10 @@
+div#app-div {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
+  max-width: 50%;
+}

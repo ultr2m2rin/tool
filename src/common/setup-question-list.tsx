@@ -1247,20 +1247,29 @@ const QuestionTwentyeightOptionThree: () => ReactNode = () => {
   );
 };
 
+export interface Weight {
+  yes: number;
+  no: number;
+  indeterminate?: number;
+}
+
 export interface Questions {
   question: string;
   recommendations: (() => ReactNode)[];
   recommendationThreeButtonContent?: string;
+  weight?: Weight;
 }
 
 export const questions: Questions[] = [
   {
     question: QuestionOneTitle,
     recommendations: [QuestionOneOptionOne, QuestionOneOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionTwoTitle,
     recommendations: [QuestionTwoOptionOne, QuestionTwoOptionTwo],
+    weight: { yes: 0, no: 1 },
   },
   {
     question: QuestionThreeTitle,
@@ -1270,14 +1279,17 @@ export const questions: Questions[] = [
       QuestionThreeOptionThree,
     ],
     recommendationThreeButtonContent: "Prefer not to answer",
+    weight: { yes: 0, no: 1, indeterminate: 0 },
   },
   {
     question: QuestionFourTitle,
     recommendations: [QuestionFourOptionOne, QuestionFourOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionFiveTitle,
     recommendations: [QuestionFiveOptionOne, QuestionFiveOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionSixTitle,
@@ -1287,6 +1299,7 @@ export const questions: Questions[] = [
       QuestionSixOptionThree,
     ],
     recommendationThreeButtonContent: "I am not familiar with these",
+    weight: { yes: 1, no: 0, indeterminate: 0 },
   },
   {
     question: QuestionSevenTitle,
@@ -1296,6 +1309,7 @@ export const questions: Questions[] = [
       QuestionSevenOptionThree,
     ],
     recommendationThreeButtonContent: "Prefer not to answer",
+    weight: { yes: 0, no: 1, indeterminate: 0 },
   },
   {
     question: QuestionEightTitle,
@@ -1309,6 +1323,7 @@ export const questions: Questions[] = [
   {
     question: QuestionNineTitle,
     recommendations: [QuestionNineOptionOne, QuestionNineOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   // section 2 questions indexes 9-18
   {

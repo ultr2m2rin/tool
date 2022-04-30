@@ -1,5 +1,7 @@
 import { ChangeEvent, ReactNode, useEffect, useState } from "react";
 
+import "./question.css";
+
 interface QuestionProps {
   title: ReactNode;
   name: string;
@@ -39,7 +41,7 @@ export default function Question(props: QuestionProps) {
 
   return (
     <div>
-      <h3>{title}</h3>
+      <h3 className="question-title">{title}</h3>
       <label>
         <input
           type="radio"
