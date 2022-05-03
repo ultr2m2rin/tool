@@ -89,8 +89,8 @@ export default function Quiz(props: QuizProps) {
   };
 
   return (
-    <div>
-      <h2 className="quiz-title">Passwords and Two-Factor Authentication</h2>
+    <div className="quiz-box">
+      <h2 className="quiz-title">PASSWORDS AND TWO-FACTOR AUTHENTICATION</h2>
       {questions !== undefined && (
         <Question
           title={`${questionNumber}. ${title}`}
@@ -104,7 +104,9 @@ export default function Quiz(props: QuizProps) {
         />
       )}
       <div className="quiz-button-container">
-        <button onClick={() => nextQuestion()}>Next</button>
+        <button className="button" onClick={() => nextQuestion()}>
+          NEXT
+        </button>
       </div>
     </div>
   );

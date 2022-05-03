@@ -1,8 +1,11 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Questions } from "../setup-question-list";
+import { Questions, Weight } from "../setup-question-list";
+import { useGlobalState } from "../store/score-context";
 import Question from "./question";
+
+import "./quiz.css";
 
 interface QuizProps {
   questions: Questions[];
@@ -14,6 +17,8 @@ export default function Quiz(props: QuizProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(19);
   const [nextQuestionIndex, setNextQuestionIndex] = useState(0);
   const [nextQuestionChange, setNextQuestionChange] = useState(false);
+  const [currentAnswer, setCurrentAnswer] = useState("");
+  const { setState } = useGlobalState();
 
   const question = questions[currentQuestionIndex];
   const title = question.question;
@@ -22,11 +27,29 @@ export default function Quiz(props: QuizProps) {
   const recommendationThree = question.recommendations[2];
   const recommendationThreeButtonName =
     question.recommendationThreeButtonContent;
+  const weight = question.weight;
+  const [numQuestionsWithoutWeight, setNumQuestionsWithoutWeight] = useState(0);
 
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (weight === undefined) {
+      setNumQuestionsWithoutWeight((prev) => prev + 1);
+    }
+  }, [weight]);
+
   const nextQuestion = () => {
-    if (nextQuestionIndex === 28) navigate("/summarythree");
+    if (weight !== undefined) {
+      calculateWeight(currentAnswer, weight);
+    }
+
+    if (nextQuestionIndex === 28) {
+      setState((prevState) => ({
+        ...prevState,
+        totalQuestions: questionNumber - numQuestionsWithoutWeight,
+      }));
+      navigate("/summarythree");
+    }
 
     setNextQuestionChange(!nextQuestionChange);
     setCurrentQuestionIndex(nextQuestionIndex);
@@ -37,6 +60,7 @@ export default function Quiz(props: QuizProps) {
 
   const changeQuestion = (event: ChangeEvent<HTMLInputElement>) => {
     const answer = event.target.value;
+    setCurrentAnswer(answer);
 
     if (currentQuestionIndex === 22 && answer === "yes")
       setNextQuestionIndex(23);
@@ -48,9 +72,22 @@ export default function Quiz(props: QuizProps) {
     else setNextQuestionIndex(currentQuestionIndex + 1);
   };
 
+  const calculateWeight = (answer: string, weight: Weight) => {
+    const answerTyped = answer as keyof typeof weight;
+    const answerWeight = weight[answerTyped];
+
+    // this doesn't do anything; it's for type guarding
+    if (answerWeight === undefined) return;
+
+    setState((prevState) => ({
+      ...prevState,
+      score: answerWeight + prevState.score,
+    }));
+  };
+
   return (
     <div>
-      <h2>General Security</h2>
+      <h2 className="quiz-title">General Security</h2>
       {questions !== undefined && (
         <Question
           title={`${questionNumber}. ${title}`}
@@ -63,7 +100,11 @@ export default function Quiz(props: QuizProps) {
           onChange={changeQuestion}
         />
       )}
-      <button onClick={() => nextQuestion()}>Next</button>
+      <div className="quiz-button-container">
+        <button className="button" onClick={() => nextQuestion()}>
+          NEXT
+        </button>
+      </div>
     </div>
   );
 }

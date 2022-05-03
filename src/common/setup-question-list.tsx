@@ -9,12 +9,12 @@ const QuestionOneOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! It is recommended to change any default passwords to protect your
-      devices and any personal data they may collect, store, and use. Default
-      passwords can be easily identified and used by attackers to compromise
-      your devices and personal data. Whenever you are allowed to change default
-      passwords, it is strongly advised for you to do so by many organizations
-      (e.g.,
+      <h2 className="good">Good!</h2> It is recommended to change any default
+      passwords to protect your devices and any personal data they may collect,
+      store, and use. Default passwords can be easily identified and used by
+      attackers to compromise your devices and personal data. Whenever you are
+      allowed to change default passwords, it is strongly advised for you to do
+      so by many organizations (e.g.,
       {
         <a
           target="_blank"
@@ -33,12 +33,14 @@ const QuestionOneOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      This choice can compromise your security in the future. It is recommended
-      to change any default passwords to protect your devices and any personal
-      data they may collect, store, and use. Default passwords can be easily
-      identified and used by attackers to compromise your devices and personal
-      data. Whenever you are allowed to change default passwords, it is strongly
-      advised for you to do so by many organizations (e.g.,{" "}
+      <h2 className="bad">
+        This choice can compromise your security in the future.
+      </h2>{" "}
+      It is recommended to change any default passwords to protect your devices
+      and any personal data they may collect, store, and use. Default passwords
+      can be easily identified and used by attackers to compromise your devices
+      and personal data. Whenever you are allowed to change default passwords,
+      it is strongly advised for you to do so by many organizations (e.g.,{" "}
       {
         <a
           target="_blank"

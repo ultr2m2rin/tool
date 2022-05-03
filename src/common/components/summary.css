@@ -1,0 +1,79 @@
+h3.score {
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 50px;
+  background-color: rgb(156, 190, 158);
+  border-radius: 25px;
+}
+
+div.answerone {
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 50px;
+  background-color: rgb(205, 252, 207);
+  border-radius: 25px;
+}
+
+div.answertwo {
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 50px;
+  background-color: rgb(205, 252, 207);
+  border-radius: 25px;
+}
+
+div.answerthree {
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 50px;
+  background-color: rgb(205, 252, 207);
+  border-radius: 25px;
+  border: 5px dashed rgb(25, 63, 25);
+}
+
+button {
+  border-radius: 25px;
+  width: 95px;
+  background-color: rgb(201, 227, 208);
+  color: rgb(8, 55, 39);
+  border: 2px solid rgb(32, 65, 32);
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+div.quiz-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+h3.answerone {
+  border: 5px dashed red;
+  padding: 20px;
+}
+
+h3.answertwo {
+  border: 5px dashed rgb(177, 177, 12);
+  padding: 20px;
+}
+
+h3.answerthree {
+  border: 5px dashed rgb(69, 183, 69);
+  padding: 20px;
+}

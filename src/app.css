@@ -4,7 +4,5 @@ div#app-div {
   display: flex;
   justify-content: center;
   align-items: center;
-  resize: both;
-  overflow: auto;
   max-width: 50%;
 }

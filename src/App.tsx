@@ -11,6 +11,7 @@ import SecondQuiz from "./common/components/secondquiz";
 import ThirdQuiz from "./common/components/thirdquiz";
 
 import "./app.css";
+import FullSummary from "./common/components/fullsummary";
 
 export enum RouteNames {
   setup = "setup",
@@ -19,6 +20,7 @@ export enum RouteNames {
   summarythree = "summarythree",
   sectwo = "secondquiz",
   secthree = "thirdquiz",
+  fullsummary = "fullsummary",
 }
 
 function App() {
@@ -45,6 +47,10 @@ function App() {
             <Route
               path={`/${RouteNames.secthree}`}
               element={<ThirdQuiz questions={questions} />}
+            />
+            <Route
+              path={`/${RouteNames.fullsummary}`}
+              element={<FullSummary />}
             />
           </Routes>
         </GlobalStateProvider>

@@ -40,7 +40,7 @@ export default function Question(props: QuestionProps) {
   };
 
   return (
-    <div>
+    <div className="content">
       <h3 className="question-title">{title}</h3>
       <label>
         <input
@@ -52,6 +52,7 @@ export default function Question(props: QuestionProps) {
         />
         Yes
       </label>
+      <br></br>
       <label>
         <input
           type="radio"
@@ -62,6 +63,7 @@ export default function Question(props: QuestionProps) {
         />
         No
       </label>
+      <br></br>
       {optionThree !== undefined && (
         <label>
           <input
@@ -74,9 +76,11 @@ export default function Question(props: QuestionProps) {
           {optionThreeText}
         </label>
       )}
-      {answerValue === "yes" && optionOne}
-      {answerValue === "no" && optionTwo}
-      {answerValue === "indeterminate" && optionThree}
+      {answerValue === "yes" && <div className="answer">{optionOne}</div>}
+      {answerValue === "no" && <div className="answer">{optionTwo}</div>}
+      {answerValue === "indeterminate" && (
+        <div className="answer">{optionThree}</div>
+      )}
     </div>
   );
 }
