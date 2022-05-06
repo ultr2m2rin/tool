@@ -1,6 +1,6 @@
 h2.quiz-title {
   text-align: center;
-  background-color: rgb(156, 190, 158);
+  background-color: rgb(156, 168, 190);
   border-radius: 25px;
   width: 650px;
   padding: 20px;
@@ -14,15 +14,15 @@ div.quiz-button-container {
 }
 
 body {
-  background-color: rgb(223, 250, 224);
+  background-color: white;
 }
 
 button {
   border-radius: 25px;
   width: 95px;
-  background-color: rgb(201, 227, 208);
-  color: rgb(8, 55, 39);
-  border: 2px solid rgb(32, 65, 32);
+  background-color: rgb(201, 212, 227);
+  color: rgb(8, 28, 55);
+  border: 2px solid rgb(32, 33, 65);
   padding: 5px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

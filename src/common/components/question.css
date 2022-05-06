@@ -8,14 +8,14 @@ h3.question-title {
 
 div.content {
   text-align: center;
-  background-color: rgb(205, 252, 207);
+  background-color: rgb(222, 232, 238);
   border-radius: 25px;
   width: 650px;
   padding: 20px;
 }
 
 div.answer {
-  border: 5px dashed rgb(25, 63, 25);
+  border: 5px dashed rgb(46, 65, 120);
   padding: 10px;
   text-align: center;
   margin-top: 15px;

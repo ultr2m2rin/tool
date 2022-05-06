@@ -76,13 +76,16 @@ const QuestionTwoOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      This choice can compromise your security in the future. Blank or null
-      passwords pose a big security threat to your devices and personal data. In
-      the case of blank or null passwords, an attacker does not need to spend
-      any time at all to compromise your device's security. By having blank or
-      null passwords, users are leaving the door open for an attacker to come
-      in, which is not desirable. You should never have blank or null passwords.
-      Your password should be complex enough to protect you from attackers.
+      <h2 className="bad">
+        This choice can compromise your security in the future.
+      </h2>{" "}
+      Blank or null passwords pose a big security threat to your devices and
+      personal data. In the case of blank or null passwords, an attacker does
+      not need to spend any time at all to compromise your device's security. By
+      having blank or null passwords, users are leaving the door open for an
+      attacker to come in, which is not desirable. You should never have blank
+      or null passwords. Your password should be complex enough to protect you
+      from attackers.
     </>
   );
 };
@@ -91,8 +94,9 @@ const QuestionTwoOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Blank or null passwords pose a big security threat to your devices
-      and personal data. You should never have blank or null passwords.
+      <h2 className="good">Good!</h2> Blank or null passwords pose a big
+      security threat to your devices and personal data. You should never have
+      blank or null passwords.
     </>
   );
 };
@@ -104,12 +108,14 @@ const QuestionThreeOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      This choice can compromise your security in the future. When a password is
-      the same as your account name (or login), it is easy for an attacker to
-      compromise your security since they will be able to guess it very easily
-      and very fast. Your password should always be different from your account
-      name (or login). Your password should be complex enough to protect you
-      from attackers.
+      <h2 className="bad">
+        This choice can compromise your security in the future.
+      </h2>{" "}
+      When a password is the same as your account name (or login), it is easy
+      for an attacker to compromise your security since they will be able to
+      guess it very easily and very fast. Your password should always be
+      different from your account name (or login). Your password should be
+      complex enough to protect you from attackers.
     </>
   );
 };
@@ -118,9 +124,9 @@ const QuestionThreeOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Your password should always be different from your account name (or
-      login). Your password should be complex enough to protect you from
-      attackers.
+      <h2 className="good">Good!</h2> Your password should always be different
+      from your account name (or login). Your password should be complex enough
+      to protect you from attackers.
     </>
   );
 };
@@ -129,11 +135,14 @@ const QuestionThreeOptionThree: () => ReactNode = () => {
   return (
     <>
       <br />
+      <h2 className="bad">
+        Your password should always be different from your account name (or
+        login).
+      </h2>{" "}
       When a password is the same as your account name (or login), it is easy
       for an attacker to compromise your security since they will be able to
-      guess it very easily and very fast. Your password should always be
-      different from your account name (or login). Your password should be
-      complex enough to protect you from attackers.
+      guess it very easily and very fast. Your password should be complex enough
+      to protect you from attackers.
     </>
   );
 };
@@ -145,12 +154,13 @@ const QuestionFourOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Long and complex passwords are quite difficult to be compromised.
-      The more characters your password contains, the more combinations there
-      will be for an attacker to go through before they will be able to crack
-      it. This process takes a lot of time and computational power. With longer
-      and more complex passwords, the attacker will not be able to compromise
-      your security as easily as with simple and short passwords.
+      <h2 className="good">Good!</h2> Long and complex passwords are quite
+      difficult to be compromised. The more characters your password contains,
+      the more combinations there will be for an attacker to go through before
+      they will be able to crack it. This process takes a lot of time and
+      computational power. With longer and more complex passwords, the attacker
+      will not be able to compromise your security as easily as with simple and
+      short passwords.
     </>
   );
 };
@@ -159,14 +169,17 @@ const QuestionFourOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      This choice can compromise your security in the future. Unlike simple
-      passwords, long and complex ones are quite difficult to be compromised.
-      The more characters your password contains, the more combinations there
-      will be for an attacker to go through before they will be able to crack
-      it. This process takes a lot of time and computational power. With longer
-      and more complex passwords, the attacker will not be able to compromise
-      your security as easily as with simple and short passwords. Your password
-      should be long and complex enough to protect you from attackers.
+      <h2 className="bad">
+        This choice can compromise your security in the future.
+      </h2>{" "}
+      Unlike simple passwords, long and complex ones are quite difficult to be
+      compromised. The more characters your password contains, the more
+      combinations there will be for an attacker to go through before they will
+      be able to crack it. This process takes a lot of time and computational
+      power. With longer and more complex passwords, the attacker will not be
+      able to compromise your security as easily as with simple and short
+      passwords. Your password should be long and complex enough to protect you
+      from attackers.
     </>
   );
 };
@@ -178,9 +191,9 @@ const QuestionFiveOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! There are plenty of trustworthy sources that provide recommendations
-      on how to create secure passwords. For example, you can adhere to
-      recommendations posted by{" "}
+      <h2 className="good">Good!</h2> There are plenty of trustworthy sources
+      that provide recommendations on how to create secure passwords. For
+      example, you can adhere to recommendations posted by{" "}
       {
         <a
           target="_blank"
@@ -199,9 +212,9 @@ const QuestionFiveOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      You may want to reconsider this. Many public and private organizations
-      usually have their recommendations on how to create secure passwords. For
-      example, you can review recommendations by{" "}
+      <h2 className="bad">You may want to reconsider this.</h2> Many public and
+      private organizations usually have their recommendations on how to create
+      secure passwords. For example, you can review recommendations by{" "}
       {
         <a
           target="_blank"
@@ -243,10 +256,10 @@ const QuestionSixOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Password managers allow their users to store the passwords in a
-      secure way. Always choose a password manager that you can trust, has many
-      good reviews, and functions to meet your needs (e.g., it can be a mobile
-      app or a PC app).
+      <h2 className="good">Good!</h2> Password managers allow their users to
+      store the passwords in a secure way. Always choose a password manager that
+      you can trust, has many good reviews, and functions to meet your needs
+      (e.g., it can be a mobile app or a PC app).
     </>
   );
 };
@@ -255,13 +268,13 @@ const QuestionSixOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      You may want to reconsider this. It is important to store your passwords
-      in a secure place. For example, many people tend to write their passwords
-      down on a piece of paper and leave it in a visible spot, which poses many
-      security risks. Password managers allow their users to store the passwords
-      in a secure way. Always choose a password manager that you can trust, has
-      many good reviews, and functions to meet your needs (e.g., it can be a
-      mobile app or a PC app).
+      <h2 className="bad">You may want to reconsider this.</h2> It is important
+      to store your passwords in a secure place. For example, many people tend
+      to write their passwords down on a piece of paper and leave it in a
+      visible spot, which poses many security risks. Password managers allow
+      their users to store the passwords in a secure way. Always choose a
+      password manager that you can trust, has many good reviews, and functions
+      to meet your needs (e.g., it can be a mobile app or a PC app).
     </>
   );
 };
@@ -270,12 +283,15 @@ const QuestionSixOptionThree: () => ReactNode = () => {
   return (
     <>
       <br />
-      It is important to store your passwords in a secure place. For example,
-      many people tend to write their passwords down on a piece of paper and
-      leave it in a visible spot, which poses many security risks. Password
-      managers allow their users to store the passwords in a secure way. Always
-      choose a password manager that you can trust, has many good reviews, and
-      functions to meet your needs (e.g., it can be a mobile app or a PC app).
+      <h2 className="bad">
+        It is important to store your passwords in a secure place.
+      </h2>{" "}
+      For example, many people tend to write their passwords down on a piece of
+      paper and leave it in a visible spot, which poses many security risks.
+      Password managers allow their users to store the passwords in a secure
+      way. Always choose a password manager that you can trust, has many good
+      reviews, and functions to meet your needs (e.g., it can be a mobile app or
+      a PC app).
     </>
   );
 };
@@ -287,11 +303,12 @@ const QuestionSevenOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      You may want to reconsider this. It is important to store your passwords
-      securely and limit the number of people who can access them. Ideally, you
-      should be the only person who knows your passwords. However, if some other
-      people must know your password, you should be able to trust them and
-      introduce them to best practices regarding secure passwords.
+      <h2 className="bad">You may want to reconsider this.</h2> It is important
+      to store your passwords securely and limit the number of people who can
+      access them. Ideally, you should be the only person who knows your
+      passwords. However, if some other people must know your password, you
+      should be able to trust them and introduce them to best practices
+      regarding secure passwords.
     </>
   );
 };
@@ -300,11 +317,11 @@ const QuestionSevenOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! It is important to store your passwords securely and limit the
-      number of people who can access them. Ideally, you should be the only
-      person who knows your passwords. However, if some other people must know
-      your password, you should be able to trust them and introduce them to best
-      practices regarding secure passwords.
+      <h2 className="good">Good!</h2> It is important to store your passwords
+      securely and limit the number of people who can access them. Ideally, you
+      should be the only person who knows your passwords. However, if some other
+      people must know your password, you should be able to trust them and
+      introduce them to best practices regarding secure passwords.
     </>
   );
 };
@@ -313,11 +330,13 @@ const QuestionSevenOptionThree: () => ReactNode = () => {
   return (
     <>
       <br />
-      It is important to store your passwords securely and limit the number of
-      people who can access them. Ideally, you should be the only person who
-      knows your passwords. However, if some other people must know your
-      password, you should be able to trust them and introduce them to best
-      practices regarding secure passwords.
+      <h2 className="bad">
+        It is important to store your passwords securely and limit the number of
+        people who can access them.
+      </h2>{" "}
+      Ideally, you should be the only person who knows your passwords. However,
+      if some other people must know your password, you should be able to trust
+      them and introduce them to best practices regarding secure passwords.
     </>
   );
 };
@@ -397,12 +416,12 @@ const QuestionNineOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Two-factor authentication (2FA) is a type of multi-factor
-      authentication that requires a user to use two methods to verify their
-      identity. The first method is usually about using your credentials (e.g.,
-      login and password). The second method is to provide a one-time passcode
-      sent to your phone or email or found in a special authenticator
-      application like{" "}
+      <h2 className="good">Good!</h2> Two-factor authentication (2FA) is a type
+      of multi-factor authentication that requires a user to use two methods to
+      verify their identity. The first method is usually about using your
+      credentials (e.g., login and password). The second method is to provide a
+      one-time passcode sent to your phone or email or found in a special
+      authenticator application like{" "}
       {
         <a
           target="_blank"
@@ -424,13 +443,15 @@ const QuestionNineOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      You may want to reconsider your choice about two-factor authentication
-      (2FA). 2FA is a type of multi-factor authentication that requires a user
-      to use two methods to verify their identity. This is done for security
-      purposes. For example, the first method you can use is providing your
-      credentials (e.g., login and password). The second method can be
-      represented by using authenticator applications with one-time passcodes
-      like{" "}
+      <h2 className="bad">
+        You may want to reconsider your choice about two-factor authentication
+        (2FA).
+      </h2>{" "}
+      2FA is a type of multi-factor authentication that requires a user to use
+      two methods to verify their identity. This is done for security purposes.
+      For example, the first method you can use is providing your credentials
+      (e.g., login and password). The second method can be represented by using
+      authenticator applications with one-time passcodes like{" "}
       {
         <a
           target="_blank"
@@ -479,7 +500,7 @@ const QuestionTenOptionTwo: () => ReactNode = () => {
         >
           Google
         </a>
-      }
+      }{" "}
       sends security alerts when they detect if someone signs in an account on a
       new device. If an attacker tries to obtain access to your account, it is
       important that you can receive notifications about it and respond
@@ -505,7 +526,7 @@ const QuestionTenOptionThree: () => ReactNode = () => {
         >
           Google
         </a>
-      }
+      }{" "}
       sends security alerts when they detect if someone signs in an account on a
       new device. If an attacker tries to obtain access to your account, it is
       important that you can receive notifications about it and respond
@@ -522,11 +543,11 @@ const QuestionElevenOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      You may want to reconsider this. Generally, notifications are used to
-      notify users about any changes, updates, or anything that requires users’
-      attention regarding users’ devices. Some notifications are related to
-      security and sometimes can prevents users from security breaches. For
-      example,{" "}
+      <h2 className="bad">You may want to reconsider this.</h2> Generally,
+      notifications are used to notify users about any changes, updates, or
+      anything that requires users’ attention regarding users’ devices. Some
+      notifications are related to security and sometimes can prevents users
+      from security breaches. For example,{" "}
       {
         <a
           target="_blank"
@@ -535,7 +556,7 @@ const QuestionElevenOptionOne: () => ReactNode = () => {
         >
           Google
         </a>
-      }
+      }{" "}
       sends security alerts when they detect if someone signs in an account on a
       new device. If an attacker tries to obtain access to your account, it is
       important that you can receive notifications about it and respond
@@ -549,10 +570,11 @@ const QuestionElevenOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Generally, notifications are used to notify users about any changes,
-      updates, or anything that requires users’ attention regarding users’
-      devices. Some notifications are related to security and sometimes can
-      prevents users from security breaches. For example,{" "}
+      <h2 className="good">Good!</h2> Generally, notifications are used to
+      notify users about any changes, updates, or anything that requires users’
+      attention regarding users’ devices. Some notifications are related to
+      security and sometimes can prevents users from security breaches. For
+      example,{" "}
       {
         <a
           target="_blank"
@@ -561,7 +583,7 @@ const QuestionElevenOptionTwo: () => ReactNode = () => {
         >
           Google
         </a>
-      }
+      }{" "}
       sends security alerts when they detect if someone signs in an account on a
       new device. If an attacker tries to obtain access to your account, it is
       important that you can receive notifications about it and respond
@@ -597,7 +619,7 @@ const QuestionTwelveOptionTwo: () => ReactNode = () => {
         >
           Nest Learning Thermostat
         </a>
-      }
+      }{" "}
       collects setup information provided by users as well as technical
       information from the device, environmental data from thermostat’s sensors,
       and other types of data.{" "}
@@ -609,7 +631,7 @@ const QuestionTwelveOptionTwo: () => ReactNode = () => {
         >
           Nest Cam
         </a>
-      }
+      }{" "}
       collects video and audio signals and data along with other types of data.
       It is important to know if your device collects any type of your personal
       information to be able to control the settings (e.g., you can enable audio
@@ -635,7 +657,7 @@ const QuestionTwelveOptionThree: () => ReactNode = () => {
         >
           Nest Learning Thermostat
         </a>
-      }
+      }{" "}
       collects setup information provided by users as well as technical
       information from the device, environmental data from thermostat’s sensors,
       and other types of data.{" "}
@@ -647,7 +669,7 @@ const QuestionTwelveOptionThree: () => ReactNode = () => {
         >
           Nest Cam
         </a>
-      }
+      }{" "}
       collects video and audio signals and data along with other types of data.
       It is important to know if your device collects any type of your personal
       information to be able to control the settings (e.g., you can enable audio
@@ -666,12 +688,13 @@ const QuestionThirteenOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! It is important to know if your device collects any type of your
-      personal information to be able to control the settings (e.g., you can
-      enable audio recordings but disable video recordings if you wish) or at
-      least be aware of the use of your personal data. We recommend referring to
-      official data privacy statements published by device’s manufacturers to
-      learn about types of data collected by your devices.
+      <h2 className="good">Good!</h2> It is important to know if your device
+      collects any type of your personal information to be able to control the
+      settings (e.g., you can enable audio recordings but disable video
+      recordings if you wish) or at least be aware of the use of your personal
+      data. We recommend referring to official data privacy statements published
+      by device’s manufacturers to learn about types of data collected by your
+      devices.
     </>
   );
 };
@@ -680,8 +703,11 @@ const QuestionThirteenOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      This choice can compromise your security in the future. Some devices may
-      need to collect user’s personal information to operate. For example,{" "}
+      <h2 className="bad">
+        This choice can compromise your security in the future.
+      </h2>{" "}
+      Some devices may need to collect user’s personal information to operate.
+      For example,{" "}
       {
         <a
           target="_blank"
@@ -690,7 +716,7 @@ const QuestionThirteenOptionTwo: () => ReactNode = () => {
         >
           Nest Learning Thermostat
         </a>
-      }
+      }{" "}
       collects setup information provided by users as well as technical
       information from the device, environmental data from thermostat’s sensors,
       and other types of data.{" "}
@@ -702,7 +728,7 @@ const QuestionThirteenOptionTwo: () => ReactNode = () => {
         >
           Nest Cam
         </a>
-      }
+      }{" "}
       collects video and audio signals and data along with other types of data.
       It is important to know what kind of data your device collects to be able
       to control the settings (e.g., you can enable audio recordings but disable
@@ -740,7 +766,7 @@ const QuestionFourteenOptionTwo: () => ReactNode = () => {
         >
           Nest Cam
         </a>
-      }
+      }{" "}
       collects video and audio signals and data along with other types of data.
       It is important to know what kind of data your device collects to be able
       to control the settings (e.g., you can enable audio recordings but disable
@@ -764,7 +790,7 @@ const QuestionFourteenOptionThree: () => ReactNode = () => {
         >
           Nest Cam
         </a>
-      }
+      }{" "}
       collects video and audio signals and data along with other types of data.
       It is important to know what kind of data your device collects to be able
       to control the settings (e.g., you can enable audio recordings but disable
@@ -814,11 +840,11 @@ const QuestionSixteenOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! It is important to know how the data from your device is being
-      protected since the awareness may allow you to choose what kind of data
-      you are willing to share. We recommend referring to official guidelines
-      published by device’s manufacturers to learn about their data protection
-      policies.
+      <h2 className="good">Good!</h2> It is important to know how the data from
+      your device is being protected since the awareness may allow you to choose
+      what kind of data you are willing to share. We recommend referring to
+      official guidelines published by device’s manufacturers to learn about
+      their data protection policies.
     </>
   );
 };
@@ -827,11 +853,13 @@ const QuestionSixteenOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      It is important to know how the data from your device is being protected
-      since the awareness may allow you to choose what kind of data you are
-      willing to share. We strongly recommend referring to official guidelines
-      published by device’s manufacturers to learn about their data protection
-      policies.
+      <h2 className="bad">
+        It is important to know how the data from your device is being
+        protected.
+      </h2>{" "}
+      The awareness may allow you to choose what kind of data you are willing to
+      share. We strongly recommend referring to official guidelines published by
+      device’s manufacturers to learn about their data protection policies.
     </>
   );
 };
@@ -912,9 +940,9 @@ const QuestionNineteenOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Remember, it is important to know what kind of data you agree to
-      share and with whom if you are asked to allow the access of your data to
-      companies other than the manufacturer.
+      <h2 className="good">Good!</h2> Remember, it is important to know what
+      kind of data you agree to share and with whom if you are asked to allow
+      the access of your data to companies other than the manufacturer.
     </>
   );
 };
@@ -923,9 +951,10 @@ const QuestionNineteenOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      You may want to learn about it. Remember, it is important to know what
-      kind of data you agree to share and with whom if you are asked to allow
-      the access of your data to companies other than the manufacturer.
+      <h2 className="bad">You may want to learn more about it.</h2> Remember, it
+      is important to know what kind of data you agree to share and with whom if
+      you are asked to allow the access of your data to companies other than the
+      manufacturer.
     </>
   );
 };
@@ -939,9 +968,9 @@ const QuestionTwentyOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! It is important to know your device’s features and details about
-      them. When you understand what your device is capable of, you have more
-      chances to protect it efficiently.
+      <h2 className="good">Good!</h2> It is important to know your device’s
+      features and details about them. When you understand what your device is
+      capable of, you have more chances to protect it efficiently.
     </>
   );
 };
@@ -950,9 +979,10 @@ const QuestionTwentyOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      We recommend searching for this information. It is important to know your
-      device’s features and details about them. When you understand what your
-      device is capable of, you have more chances to protect it efficiently.
+      <h2 className="bad">We recommend searching for this information.</h2> It
+      is important to know your device’s features and details about them. When
+      you understand what your device is capable of, you have more chances to
+      protect it efficiently.
     </>
   );
 };
@@ -964,10 +994,10 @@ const QuestionTwentyoneOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Remember, with end-of-life technology your device will stop
-      receiving automatic security updates and vulnerabilities will not be fixed
-      anymore. Therefore, it is important to be aware of the date when this
-      happens.
+      <h2 className="good">Good!</h2> Remember, with end-of-life technology your
+      device will stop receiving automatic security updates and vulnerabilities
+      will not be fixed anymore. Therefore, it is important to be aware of the
+      date when this happens.
     </>
   );
 };
@@ -976,11 +1006,11 @@ const QuestionTwentyoneOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      You may want to search for this information. Remember, with end-of-life
-      technology your device will stop receiving automatic security updates and
-      vulnerabilities will not be fixed anymore. Your device can become an easy
-      target for attackers. Therefore, it is important to be aware of the date
-      when this happens.
+      <h2 className="bad">You may want to search for this information.</h2>
+      Remember, with end-of-life technology your device will stop receiving
+      automatic security updates and vulnerabilities will not be fixed anymore.
+      Your device can become an easy target for attackers. Therefore, it is
+      important to be aware of the date when this happens.
     </>
   );
 };
@@ -1077,8 +1107,8 @@ const QuestionTwentyfiveOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Remember, some devices can be abused by attackers if they are
-      visible in your home (e.g.,{" "}
+      <h2 className="good">Good!</h2> Remember, some devices can be abused by
+      attackers if they are visible in your home (e.g.,{" "}
       {
         <a
           target="_blank"
@@ -1087,7 +1117,7 @@ const QuestionTwentyfiveOptionOne: () => ReactNode = () => {
         >
           this
         </a>
-      }
+      }{" "}
       article discusses how Google Home or Amazon Alexa can be affected by
       lasers) or can be easily physically accessible (e.g., smart locks or smart
       thermostats).
@@ -1099,8 +1129,11 @@ const QuestionTwentyfiveOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      We recommend physically protecting your devices if needed. Remember, some
-      devices can be abused by attackers if they are visible in your home (e.g.,{" "}
+      <h2 className="bad">
+        We recommend physically protecting your devices if needed.
+      </h2>{" "}
+      Remember, some devices can be abused by attackers if they are visible in
+      your home (e.g.,{" "}
       {
         <a
           target="_blank"
@@ -1109,7 +1142,7 @@ const QuestionTwentyfiveOptionTwo: () => ReactNode = () => {
         >
           this
         </a>
-      }
+      }{" "}
       article discusses how Google Home or Amazon Alexa can be affected by
       lasers) or can be easily physically accessible (e.g., smart locks or smart
       thermostats).
@@ -1124,9 +1157,9 @@ const QuestionTwentysixOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Make sure you can always access this information if needed. When you
-      know your device’s model and serial number you can find relevant
-      instructions for it much faster and easier.
+      <h2 className="good">Good!</h2> Make sure you can always access this
+      information if needed. When you know your device’s model and serial number
+      you can find relevant instructions for it much faster and easier.
     </>
   );
 };
@@ -1135,11 +1168,11 @@ const QuestionTwentysixOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      We recommend searching for this information. You can try looking for it in
-      the packaging for your device or somewhere directly on your device. Make
-      sure you can always access this information if needed. When you know your
-      device’s model and serial number you can find relevant instructions for it
-      much faster and easier.
+      <h2 className="bad">We recommend searching for this information.</h2> You
+      can try looking for it in the packaging for your device or somewhere
+      directly on your device. Make sure you can always access this information
+      if needed. When you know your device’s model and serial number you can
+      find relevant instructions for it much faster and easier.
     </>
   );
 };
@@ -1151,9 +1184,9 @@ const QuestionTwentysevenOptionOne: () => ReactNode = () => {
   return (
     <>
       <br />
-      Good! Remember to refer to official information provided by trustworthy
-      sources like manufacturers and service providers. For example, on this
-      official{" "}
+      <h2 className="good">Good!</h2> Remember to refer to official information
+      provided by trustworthy sources like manufacturers and service providers.
+      For example, on this official{" "}
       {
         <a
           target="_blank"
@@ -1162,7 +1195,7 @@ const QuestionTwentysevenOptionOne: () => ReactNode = () => {
         >
           webpage
         </a>
-      }
+      }{" "}
       administered by Amazon you can find information about managing Alexa
       Privacy Settings.
     </>
@@ -1173,11 +1206,11 @@ const QuestionTwentysevenOptionTwo: () => ReactNode = () => {
   return (
     <>
       <br />
-      We recommend searching for this information. Manufacturers usually publish
-      their guidelines and pieces of advice on how to use your device and
-      maintain its security. Please, refer to official information provided by
-      trustworthy sources like manufacturers and service providers. For example,
-      on this official{" "}
+      <h2 className="bad">We recommend searching for this information.</h2>
+      Manufacturers usually publish their guidelines and pieces of advice on how
+      to use your device and maintain its security. Please, refer to official
+      information provided by trustworthy sources like manufacturers and service
+      providers. For example, on this official{" "}
       {
         <a
           target="_blank"
@@ -1186,7 +1219,7 @@ const QuestionTwentysevenOptionTwo: () => ReactNode = () => {
         >
           webpage
         </a>
-      }
+      }{" "}
       administered by Amazon you can find information about managing Alexa
       Privacy Settings.
     </>
@@ -1221,7 +1254,7 @@ const QuestionTwentyeightOptionTwo: () => ReactNode = () => {
         >
           article
         </a>
-      }
+      }{" "}
       published by WikiHow explains how you can find if a website is legitimate.
     </>
   );
@@ -1243,7 +1276,7 @@ const QuestionTwentyeightOptionThree: () => ReactNode = () => {
         >
           article
         </a>
-      }
+      }{" "}
       published by WikiHow explains how you can find if a website is legitimate.
     </>
   );

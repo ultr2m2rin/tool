@@ -27,17 +27,30 @@ function ScoreMessage() {
     <>
       {score >= 0 && score <= 0.3 && (
         <div className="answerone">
-          <h3 className="answerone">answer 1</h3>
+          <h4 className="answerone">
+            There is always a room to grow. We highly recommend reading all
+            information about your devices capabilities and learn about their
+            security characteristics. It is valuable to know what actions you
+            can take to ensure that a device is secure on your end.
+          </h4>
         </div>
       )}
       {score > 0.3 && score <= 0.7 && (
         <div className="answertwo">
-          <h3 className="answertwo">answer 2</h3>
+          <h4 className="answertwo">
+            This is a good start! We highly recommend you to keep learning about
+            your devices capabilities and their security characteristics. It is
+            valuable to know what actions you can take to ensure that a device
+            is secure on your end.
+          </h4>
         </div>
       )}
       {score > 0.7 && (
         <div className="answerthree">
-          <h3 className="answerthree">answer 3</h3>
+          <h4 className="answerthree">
+            Good! It is valuable to know what actions you can take to ensure
+            that a device is secure on your end.
+          </h4>
         </div>
       )}
     </>
