@@ -11,7 +11,7 @@ interface QuizProps {
   questions: Questions[];
 }
 
-export default function Quiz(props: QuizProps) {
+export default function SecondQuiz(props: QuizProps) {
   const { questions } = props;
   const [questionNumber, setQuestionNumber] = useState(1);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(9);
@@ -32,11 +32,23 @@ export default function Quiz(props: QuizProps) {
 
   const navigate = useNavigate();
 
+  // preventing refresh
+  useEffect(() => {
+    window.addEventListener("beforeunload", alertUser);
+    return () => {
+      window.removeEventListener("beforeunload", alertUser);
+    };
+  }, []);
+  const alertUser = (e: any) => {
+    e.preventDefault();
+    e.returnValue = "";
+  };
+
   useEffect(() => {
     if (weight === undefined) {
       setNumQuestionsWithoutWeight((prev) => prev + 1);
     }
-  }, [weight]);
+  }, [weight, questionNumber]);
 
   const nextQuestion = () => {
     if (weight !== undefined) {
@@ -46,7 +58,7 @@ export default function Quiz(props: QuizProps) {
     if (nextQuestionIndex === 19) {
       setState((prevState) => ({
         ...prevState,
-        totalQuestions: questionNumber - numQuestionsWithoutWeight,
+        totalQuestions: questionNumber - numQuestionsWithoutWeight + 1, // change this for production; double rendering will change tha calculation/score
       }));
       navigate("/summarytwo");
     }

@@ -32,11 +32,23 @@ export default function Quiz(props: QuizProps) {
 
   const navigate = useNavigate();
 
+  // preventing refresh
+  useEffect(() => {
+    window.addEventListener("beforeunload", alertUser);
+    return () => {
+      window.removeEventListener("beforeunload", alertUser);
+    };
+  }, []);
+  const alertUser = (e: any) => {
+    e.preventDefault();
+    e.returnValue = "";
+  };
+
   useEffect(() => {
     if (weight === undefined) {
       setNumQuestionsWithoutWeight((prev) => prev + 1);
     }
-  }, [weight]);
+  }, [weight, questionNumber]);
 
   const nextQuestion = () => {
     if (weight !== undefined) {

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { RouteNames } from "../../App";
@@ -5,6 +6,18 @@ import { useGlobalState } from "../store/score-context";
 
 export default function Summary() {
   const { state } = useGlobalState();
+
+  // preventing refresh
+  useEffect(() => {
+    window.addEventListener("beforeunload", alertUser);
+    return () => {
+      window.removeEventListener("beforeunload", alertUser);
+    };
+  }, []);
+  const alertUser = (e: any) => {
+    e.preventDefault();
+    e.returnValue = "";
+  };
 
   return (
     <div>
@@ -59,12 +72,34 @@ function ScoreMessage() {
 
 export function FullSummary() {
   const navigate = useNavigate();
+  const { state, setState } = useGlobalState();
+
+  const nextSection = () => {
+    navigate(`/${RouteNames.fullsummary}`);
+
+    const qr = state.questionReccommendations;
+    const questions = state.totalQuestions;
+    const totalQuestions = state.totaltotalQuestions;
+    const score = state.score;
+    const totalScore = state.totaltotalScore;
+
+    if (qr === undefined) return;
+    if (questions === undefined) return;
+    if (totalQuestions === undefined) return;
+    if (totalScore === undefined) return;
+
+    setState((prevState) => ({
+      ...prevState,
+      score: 0,
+      totalQuestions: 0,
+      totaltotalQuestions: totalQuestions + questions,
+      totaltotalScore: score + totalScore,
+    }));
+  };
+
   return (
     <div className="quiz-button-container">
-      <button
-        className="button"
-        onClick={() => navigate(`/${RouteNames.fullsummary}`)}
-      >
+      <button className="button" onClick={() => nextSection()}>
         FULL SUMMARY
       </button>
     </div>

@@ -1373,19 +1373,17 @@ export const questions: Questions[] = [
   {
     question: QuestionElevenTitle,
     recommendations: [QuestionElevenOptionOne, QuestionElevenOptionTwo],
+    weight: { yes: 0, no: 1 },
   },
   {
     question: QuestionTwelveTitle,
-    recommendations: [
-      QuestionTwelveOptionOne,
-      QuestionTwelveOptionTwo,
-      QuestionTwelveOptionThree,
-    ],
+    recommendations: [QuestionTwelveOptionOne, QuestionTwelveOptionThree],
     recommendationThreeButtonContent: "I am not sure",
   },
   {
     question: QuestionThirteenTitle,
     recommendations: [QuestionThirteenOptionOne, QuestionThirteenOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionFourteenTitle,
@@ -1403,6 +1401,7 @@ export const questions: Questions[] = [
   {
     question: QuestionSixteenTitle,
     recommendations: [QuestionSixteenOptionOne, QuestionSixteenOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionSeventeenTitle,
@@ -1420,15 +1419,18 @@ export const questions: Questions[] = [
   {
     question: QuestionNineteenTitle,
     recommendations: [QuestionNineteenOptionOne, QuestionNineteenOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   // section 3 questions indexes 19-27
   {
     question: QuestionTwentyTitle,
     recommendations: [QuestionTwentyOptionOne, QuestionTwentyOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionTwentyoneTitle,
     recommendations: [QuestionTwentyoneOptionOne, QuestionTwentyoneOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionTwentytwoTitle,
@@ -1450,10 +1452,12 @@ export const questions: Questions[] = [
   {
     question: QuestionTwentyfiveTitle,
     recommendations: [QuestionTwentyfiveOptionOne, QuestionTwentyfiveOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionTwentysixTitle,
     recommendations: [QuestionTwentysixOptionOne, QuestionTwentysixOptionTwo],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionTwentysevenTitle,
@@ -1461,6 +1465,7 @@ export const questions: Questions[] = [
       QuestionTwentysevenOptionOne,
       QuestionTwentysevenOptionTwo,
     ],
+    weight: { yes: 1, no: 0 },
   },
   {
     question: QuestionTwentyeightTitle,

@@ -4,16 +4,26 @@ import React, {
   useContext,
   Dispatch,
   SetStateAction,
+  ReactNode,
 } from "react";
 
 export interface GlobalStateInterface {
   score: number;
   totalQuestions?: number;
+  questionReccommendations?: {
+    question: ReactNode;
+    reccommendation: ReactNode;
+  }[];
+  totaltotalQuestions?: number;
+  totaltotalScore?: number;
 }
 
 const initialState: GlobalStateInterface = {
   score: 0,
   totalQuestions: 0,
+  questionReccommendations: [],
+  totaltotalQuestions: 0,
+  totaltotalScore: 0,
 };
 
 const GlobalStateContext = createContext({

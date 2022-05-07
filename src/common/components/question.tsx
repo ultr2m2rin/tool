@@ -1,4 +1,5 @@
 import { ChangeEvent, ReactNode, useEffect, useState } from "react";
+import { useGlobalState } from "../store/score-context";
 
 import "./question.css";
 
@@ -26,6 +27,7 @@ export default function Question(props: QuestionProps) {
   } = props;
 
   const [answerValue, setAnswerValue] = useState<string | undefined>(undefined);
+  const { state, setState } = useGlobalState();
 
   useEffect(() => {
     setAnswerValue(undefined);
@@ -37,6 +39,37 @@ export default function Question(props: QuestionProps) {
     setAnswerValue(value);
 
     if (onChange !== undefined) onChange(event);
+
+    const recc = state.questionReccommendations;
+
+    // this doesn't do anything; just for type guarding
+    if (recc === undefined) return;
+
+    if (value === "yes") {
+      setState((prevState) => ({
+        ...prevState,
+        questionReccommendations: [
+          ...recc,
+          { question: title, reccommendation: optionOne },
+        ],
+      }));
+    } else if (value === "no") {
+      setState((prevState) => ({
+        ...prevState,
+        questionReccommendations: [
+          ...recc,
+          { question: title, reccommendation: optionTwo },
+        ],
+      }));
+    } else if (value === "indeterminate") {
+      setState((prevState) => ({
+        ...prevState,
+        questionReccommendations: [
+          ...recc,
+          { question: title, reccommendation: optionThree },
+        ],
+      }));
+    }
   };
 
   return (
@@ -49,6 +82,7 @@ export default function Question(props: QuestionProps) {
           value="yes"
           name={name}
           onChange={answer}
+          disabled={answerValue !== undefined && answerValue !== "yes"}
         />
         Yes
       </label>
@@ -60,6 +94,7 @@ export default function Question(props: QuestionProps) {
           value="no"
           name={name}
           onChange={answer}
+          disabled={answerValue !== undefined && answerValue !== "no"}
         />
         No
       </label>
@@ -72,6 +107,9 @@ export default function Question(props: QuestionProps) {
             value="indeterminate"
             name={name}
             onChange={answer}
+            disabled={
+              answerValue !== undefined && answerValue !== "indeterminate"
+            }
           />
           {optionThreeText}
         </label>
