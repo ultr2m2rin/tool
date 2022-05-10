@@ -20,11 +20,13 @@ export default function FullSummary() {
 
   return (
     <div className="full-summary">
-      <h3>This is your full summary</h3>
-      <div>total score: {state.totaltotalScore}</div>
-      <div>total questions: {state.totaltotalQuestions}</div>
+      <h3 className="top">This is your full summary</h3>
+      <div className="score">Total Score: {state.totaltotalScore}</div>
+      <div className="question">
+        Total Questions: {state.totaltotalQuestions}
+      </div>
 
-      <h2>Section 1</h2>
+      <h2 className="section">Section 1</h2>
       {state.questionReccommendations?.map((qr, index) => {
         const { question, reccommendation } = qr;
 
