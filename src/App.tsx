@@ -1,4 +1,4 @@
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { Route, HashRouter, Routes } from "react-router-dom";
 import Summary from "./common/components/summary";
 import SummaryTwo from "./common/components/summarytwo";
 import SummaryThree from "./common/components/summarythree";
@@ -26,7 +26,7 @@ export enum RouteNames {
 function App() {
   return (
     <div id="app-div">
-      <BrowserRouter>
+      <HashRouter>
         <GlobalStateProvider>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -54,7 +54,7 @@ function App() {
             />
           </Routes>
         </GlobalStateProvider>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
