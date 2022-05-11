@@ -47,7 +47,17 @@ function ScoreMessage() {
             authentication are valuable means of providing security for smart
             devices. We highly recommend searching for more information about
             them and following security guidelines for creating and managing
-            passwords.
+            passwords (e.g.,{" "}
+            {
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.getcybersafe.gc.ca/en/resources/video-creating-strong-password"
+              >
+                a video
+              </a>
+            }{" "}
+            from Get Cyber Safe).
           </h4>
         </div>
       )}
@@ -55,8 +65,19 @@ function ScoreMessage() {
         <div className="answertwo">
           <h4 className="answertwo">
             This is a good start! Although passwords can be difficult to manage
-            sometimes, we highly recommend following security guidelines to
-            ensure the appropriate level of security for smart devices.
+            sometimes, we highly recommend following security guidelines for
+            creating and managing passwords (e.g.,{" "}
+            {
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.getcybersafe.gc.ca/en/resources/video-creating-strong-password"
+              >
+                a video
+              </a>
+            }{" "}
+            from Get Cyber Safe) to ensure the appropriate level of security for
+            smart devices.
           </h4>
         </div>
       )}
@@ -64,8 +85,18 @@ function ScoreMessage() {
         <div className="answerthree">
           <h4 className="answerthree">
             Good! Remember to keep following security guidelines for creating
-            passwords and using two-factor authentication for every device you
-            have (when it is applicable).
+            passwords (e.g.,{" "}
+            {
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.getcybersafe.gc.ca/en/resources/video-creating-strong-password"
+              >
+                a video
+              </a>
+            }{" "}
+            from Get Cyber Safe) and using two-factor authentication for every
+            device you have (when it is applicable).
           </h4>
         </div>
       )}

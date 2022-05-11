@@ -58,7 +58,7 @@ export default function SecondQuiz(props: QuizProps) {
     if (nextQuestionIndex === 19) {
       setState((prevState) => ({
         ...prevState,
-        totalQuestions: questionNumber - numQuestionsWithoutWeight + 1, // change this for production; double rendering will change tha calculation/score
+        totalQuestions: questionNumber - numQuestionsWithoutWeight,
       }));
       navigate("/summarytwo");
     }
